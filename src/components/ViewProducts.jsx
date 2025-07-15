@@ -18,7 +18,12 @@ const ViewProducts = () => {
         ]
     )
     return (
-        <div>
+        <div  style={{
+            backgroundImage: 'url("https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg?cs=srgb&dl=pexels-jplenio-1103970.jpg&fm=jpg")',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            minHeight: '100vh'
+        }}>
             <Navbar />
             <div className="container">
                 <div className="row">
@@ -28,7 +33,7 @@ const ViewProducts = () => {
                                 (value, index) => {
                                     return (
                                         <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3 d-flex">
-                                            <div class="card h-100">
+                                            <div class="card h-100 bg-info">
                                                 <img src={value.img} class="card-img-top" alt="..." height={400} width={100}></img>
                                                 <div class="card-body">
                                                     <h5 class="card-title">{value.pname}</h5>
